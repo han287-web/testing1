@@ -8,7 +8,8 @@
         box-sizing: border-box; /* padding no longer adds to element width */
       } 
     body {
-    max-width: 1000px;
+     text-align: center;
+    max-width: auto;
     background-color: yellow;
     padding: 5px;
     }
@@ -44,6 +45,9 @@
     p.draw = () => {
       p.fill(20, 242, 224)
       p.ellipse(p.mouseX, p.mouseY, 50, 50)
+    }
+    p.keyPressed = () => {
+      p.background(154, 117, 240)
     }
   }
   new p5(sketch)
